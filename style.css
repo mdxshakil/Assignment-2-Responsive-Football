@@ -1,0 +1,303 @@
+/* Utilities */
+:root{
+    --primary-color:#E02C6D;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -----------Header section styles--------------- */
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2D25A0;
+    height: 677px;
+    width: 100%;
+}
+.header-container:hover img{
+    transform: scale(110%) rotate(20deg);
+    transition: transform 0.3s ease-in-out;
+}
+.header-title{
+    margin-left: 156px;
+    width: 50%;
+}
+.header-title h1{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    color: #FFFFFF;
+}
+.header-title a{
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px 24px;
+    font-size: 16px;
+}
+.fa-arrow-right{
+    margin-left: 8px;
+}
+.header-image{
+    width: 50%;
+}
+.header-image img{
+    width: 90%;
+}
+
+/* -----------Players Section styles--------------- */
+.players-section{
+    margin-top: 70px;
+    padding: 0 100px;
+}
+.players-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 27px;
+    column-gap: 30px;
+    width: 100%;
+    justify-items: center;
+}
+.player{
+    width: 330px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.player-image img{
+    width: 330px;
+    height: 256px;
+}
+.player h2{
+    color: #18191F;
+    font-size: 28px;
+}
+.player p{
+    color: #6C6C6C; 
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* -----------Latest Result Section Styles----------------- */
+.result-section{
+    margin-top: 150px;
+    padding: 0 150px;
+}
+.latest-result-title h2{
+   color: #18191F;
+   font-size: 28px;
+   font-size: 4em; 
+   text-align: center;
+   line-height: 0px;
+}
+.latest-result-title p{
+    color: var(--primary-color);
+    font-weight: 900;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 0px;
+}
+.latest-result-title hr{
+    width: 30%;
+}
+.match-results img{
+    width: 20%;
+}
+.team-2 img{
+    width: 36%;
+}
+.match-results{
+    display: flex;
+    margin-top: 100px;
+}
+.team-result{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.team-result h2{
+    color: #2D25A0;
+}
+.team-result p{
+    color: var(--primary-color);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.team-result h3{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10%;
+}
+/* ------------Player of the week section styles------------ */
+.weekly-report{
+    margin-top: 70px;
+    padding: 0 100px;
+}
+.weekly-report h1{
+    text-align: center;
+    margin: 100px 0 70px 0;
+    font-size: 3em;
+    color: #18191F;
+}
+.top-players-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    justify-items: center;
+}
+.top-player{
+    width: 230px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.top-player-image img{
+    width: 230px;
+    height: 156px;
+}
+.performance-info{
+    display: flex;
+    justify-content: space-around;
+}
+.statistics p{
+    color: var(--primary-color);
+}
+
+/* ----------------Footer Styles---------------- */
+footer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    margin-top: 158px;
+    margin-bottom: 63px;
+}
+.footer-image,.social-links,.copyright{
+    display: flex;
+    justify-content: center;
+}
+.footer-image{
+    margin-bottom: 20px;
+}
+.footer-image img{
+    width: 50%;
+}
+.social-links a{
+   color: #969BAB; 
+   background-color: lightgrey;
+   margin-right: 14px;
+   padding: 3px 7px;
+   border-radius: 50%;
+}
+.copyright p{
+    font-size: 18px;
+}
+
+/* -------------------------------------------
+                Media Queries 
+--------------------------------------------*/
+
+/* +++++++++For Mobile devices++++++++++ */
+
+@media only screen and (max-width:668px) {
+/* ----------Header Section Styles---------- */
+.header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2D25A0;
+    height: 677px;
+    width: 100%;
+}
+.header-title{
+    width: 100%;
+    margin-left: 16px;
+}
+.header-title h1{
+    font-size: 36px;
+    line-height: 50px;
+}
+.header-image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-image img{
+    width: 80%;
+}
+/*---------- Players Section Styles----------*/
+.players-section{
+    margin-top: 47px;
+    padding: 0;
+}
+.players-container{
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 24px;
+}
+/* ----------Latest Result Section---------- */
+.result-section{
+    margin-top: 80px;
+    padding: 0;
+}
+.latest-result-title h2{
+   font-size: 2em; 
+   text-align: center;
+   line-height: 0px;
+}
+.latest-result-title p{
+    font-weight: 700;
+    font-size: 1em;
+}
+.latest-result-title hr{
+    width: 50%;
+}
+.match-results img{
+    width: 20%;
+}
+.team-2 img{
+    width: 36%;
+}
+.match-results{
+    flex-direction: column;
+    margin-top: 80px;
+}
+.team-result{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.team-result p{
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* ----------Top Player Report----------- */
+.weekly-report{
+    margin-top: 20px;
+    padding: 10px;
+}
+.weekly-report h1{
+    text-align: center;
+    margin: 20px 0 30px 0;
+    font-size: 2em;
+}
+.top-players-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 24px;
+}
+/* -------------Footer Section----------- */
+footer{
+    margin-top: 80px;
+}
+.footer-image{
+    margin-bottom: 20px;
+}
+.copyright p{
+    font-size: 14px;
+}
+}
